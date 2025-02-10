@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import profilePic from "../../app/images/profile-pic.png";
 import { DownloadOutlined } from "@ant-design/icons";
+import ProjectsPage from "@/app/projects/page";
 
 const HeaderPage = () => {
   return (
@@ -121,6 +122,7 @@ const HeaderPage = () => {
 
         <div className="featured ">
           <h1 className="text-4xl font-bold text-center py-10">Projects</h1>
+          <ProjectsPage />
         </div>
       </div>
     </div>
