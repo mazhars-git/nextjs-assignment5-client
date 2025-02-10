@@ -2,8 +2,8 @@ import React from "react";
 
 const LoadingPage = () => {
   return (
-    <div>
-      <h1>Loading...</h1>
+    <div className="text-center pt-10">
+      <span className="loading loading-infinity loading-lg"></span>
     </div>
   );
 };
