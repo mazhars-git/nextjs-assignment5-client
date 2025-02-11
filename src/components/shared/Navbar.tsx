@@ -72,7 +72,7 @@ const Navbar = () => {
           Login
         </Link>
         <Link
-          href="/logout"
+          href="/"
           className="btn btn-warning rounded-full hover:text-white"
         >
           Logout
