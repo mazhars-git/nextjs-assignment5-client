@@ -64,6 +64,12 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+
+      <input
+        type="checkbox"
+        value="synthwave"
+        className="toggle theme-controller"
+      />
       <div className="navbar-end space-x-3">
         <Link
           href="/login"
