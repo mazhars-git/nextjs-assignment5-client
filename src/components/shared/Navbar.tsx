@@ -65,8 +65,18 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-3">
-        <a className="btn btn-primary rounded-full hover:text-white">Login</a>
-        <a className="btn btn-warning rounded-full hover:text-white">Logout</a>
+        <Link
+          href="/login"
+          className="btn btn-primary rounded-full hover:text-white"
+        >
+          Login
+        </Link>
+        <Link
+          href="/logout"
+          className="btn btn-warning rounded-full hover:text-white"
+        >
+          Logout
+        </Link>
       </div>
     </div>
   );

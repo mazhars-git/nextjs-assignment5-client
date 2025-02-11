@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import profilePic from "../../app/images/profile-pic.png";
@@ -9,7 +8,6 @@ import ProjectsPage from "@/app/projects/page";
 const HeaderPage = () => {
   return (
     <div>
-      <Navbar />
       <div className="w-[96%] mx-auto">
         <div className="grid grid-cols-2 py-5">
           <div className="self-center">

@@ -26,7 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="w-[100%] mx-auto">
-        <div className="min-h-screen">{children}</div>
+        <div className="min-h-screen">
+          <Navbar />
+          {children}
+        </div>
         <footer className="bg-gray-800 py-5 text-white text-center">
           All rights reserved by Mazharul Islam || created 2025
         </footer>
