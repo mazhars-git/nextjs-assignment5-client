@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import loginThumb from "../images/login-thumb.png";
 import Link from "next/link";
+// import { signIn } from "next-auth/react";
 
 const LoginPage = () => {
   return (
@@ -56,6 +57,30 @@ const LoginPage = () => {
                 <button className="btn btn-info text-white">Login</button>
               </div>
             </form>
+
+            {/* Social Login Buttons */}
+            <div className="flex justify-center gap-4 mt-4 pb-10">
+              <button
+                // onClick={() =>
+                //   signIn("google", {
+                //     callbackUrl: "http://localhost:3000/dashboard",
+                //   })
+                // }
+                className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full shadow-md hover:bg-gray-200"
+              >
+                <Image src="" width={30} height={30} alt="Google logo" />
+              </button>
+              <button
+                // onClick={() =>
+                //   signIn("github", {
+                //     callbackUrl: "http://localhost:3000/dashboard",
+                //   })
+                // }
+                className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full shadow-md hover:bg-gray-200"
+              >
+                <Image src="" width={25} height={25} alt="GitHub logo" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
