@@ -9,9 +9,9 @@ import facebook from "../images/icons/facebook.png";
 
 const LoginPage = () => {
   return (
-    <div className="min-h-screen bg-base-200 pt-5">
+    <div className="min-h-screen bg-base-200 py-10">
       <h1 className="text-5xl font-bold text-center pb-10 text-sky-500">
-        Login now!
+        Welcome Back!
       </h1>
       <div>
         <div className="hero-content flex-col lg:flex-row-reverse">
@@ -61,53 +61,61 @@ const LoginPage = () => {
               </div>
             </form>
 
-            {/* Social Login Buttons */}
-            <div className="flex justify-center gap-4 pb-10">
-              <button
-                // onClick={() =>
-                //   signIn("google", {
-                //     callbackUrl: "http://localhost:3000/dashboard",
-                //   })
-                // }
-                className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full shadow-md hover:bg-gray-200"
-              >
-                <Image
-                  src={facebook}
-                  width={30}
-                  height={30}
-                  alt="Google logo"
-                />
-              </button>
-              <button
-                // onClick={() =>
-                //   signIn("google", {
-                //     callbackUrl: "http://localhost:3000/dashboard",
-                //   })
-                // }
-                className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full shadow-md hover:bg-gray-200"
-              >
-                <Image
-                  src={googleIcon}
-                  width={30}
-                  height={30}
-                  alt="Google logo"
-                />
-              </button>
-              <button
-                // onClick={() =>
-                //   signIn("github", {
-                //     callbackUrl: "http://localhost:3000/dashboard",
-                //   })
-                // }
-                className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full shadow-md hover:bg-gray-200"
-              >
-                <Image
-                  src={githubIcon}
-                  width={35}
-                  height={35}
-                  alt="GitHub logo"
-                />
-              </button>
+            <div className="card-body">
+              <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
+                <span className="relative z-10 bg-background px-2 text-muted-foreground">
+                  Or continue with
+                </span>
+              </div>
+
+              {/* Social Login Buttons */}
+              <div className="flex justify-center gap-4 my-5">
+                <button
+                  // onClick={() =>
+                  //   signIn("google", {
+                  //     callbackUrl: "http://localhost:3000/dashboard",
+                  //   })
+                  // }
+                  className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full shadow-md hover:bg-gray-200"
+                >
+                  <Image
+                    src={facebook}
+                    width={30}
+                    height={30}
+                    alt="Google logo"
+                  />
+                </button>
+                <button
+                  // onClick={() =>
+                  //   signIn("google", {
+                  //     callbackUrl: "http://localhost:3000/dashboard",
+                  //   })
+                  // }
+                  className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full shadow-md hover:bg-gray-200"
+                >
+                  <Image
+                    src={googleIcon}
+                    width={30}
+                    height={30}
+                    alt="Google logo"
+                  />
+                </button>
+                <button
+                  // onClick={() =>
+                  //   signIn("github", {
+                  //     callbackUrl: "http://localhost:3000/dashboard",
+                  //   })
+                  // }
+                  className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full shadow-md hover:bg-gray-200"
+                >
+                  <Image
+                    src={githubIcon}
+                    width={35}
+                    height={35}
+                    alt="GitHub logo"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>

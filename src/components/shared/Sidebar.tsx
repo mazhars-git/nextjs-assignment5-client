@@ -5,7 +5,7 @@ import { MdDashboardCustomize } from "react-icons/md";
 
 const Sidebar = () => {
   return (
-    <div className="bg-slate-100 min-h-screen p-4 rounded-xl">
+    <div className="bg-sky-400 min-h-screen p-4 rounded-xl">
       <ul className="space-y-4">
         <li>
           <Link
@@ -37,18 +37,18 @@ const Sidebar = () => {
       </ul>
 
       <ul className="menu bg-base-200 rounded-box w-56">
-        {/* <li>
-          <a>Item 1</a>
-        </li> */}
         <li>
           <details open>
-            <summary>Parent</summary>
+            <summary>
+              <FaBlogger className="h-5 w-5" />
+              Manage Blogs
+            </summary>
             <ul>
               <li>
-                <a>Submenu 1</a>
+                <a>Create Blog</a>
               </li>
               <li>
-                <a>Submenu 2</a>
+                <a>All Blogs</a>
               </li>
             </ul>
           </details>
