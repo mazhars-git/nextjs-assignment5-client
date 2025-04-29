@@ -46,15 +46,6 @@ const LoginPage = () => {
                   className="input input-bordered"
                   required
                 />
-                <label className="label">
-                  <p className="label-text-alt mt-1">
-                    Not Registered?{" "}
-                    <Link href="/signup" className="text-sky-400 font-bold">
-                      Signup
-                    </Link>{" "}
-                    Now
-                  </p>
-                </label>
               </div>
               <div className="form-control mt-3">
                 <button className="btn btn-info text-white">Login</button>
@@ -115,6 +106,12 @@ const LoginPage = () => {
                     alt="GitHub logo"
                   />
                 </button>
+              </div>
+              <div className="text-center text-sm">
+                Don&apos;t have an account?{" "}
+                <Link href="/signup" className="text-sky-400 font-semibold">
+                  Sign up
+                </Link>
               </div>
             </div>
           </div>
