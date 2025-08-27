@@ -4,6 +4,7 @@ import Link from "next/link";
 import profilePic from "../../app/images/profile-pic.png";
 import { DownloadOutlined } from "@ant-design/icons";
 import ProjectsPage from "@/app/projects/page";
+import { Button } from "../ui/button";
 
 const HeaderPage = () => {
   return (
@@ -25,10 +26,10 @@ const HeaderPage = () => {
               target="_blank"
               href="https://drive.google.com/file/d/1zBJQ5At9bR30qYOxlnjMrGwLaVzEIVSG/view?usp=drive_link"
             >
-              <button className="btn btn-info rounded-badge text-white font-semibold hover:text-orange-600">
+              <Button className="btn btn-info rounded-badge text-white font-semibold hover:text-orange-600">
                 My Resume
                 <DownloadOutlined />
-              </button>
+              </Button>
             </Link>
           </div>
           <div className="justify-self-center">

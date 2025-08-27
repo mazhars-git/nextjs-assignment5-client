@@ -30,7 +30,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </div>
-        <footer className="bg-gray-800 py-5 text-white text-center">
+        <footer className="bg-cyan-700 py-5 text-white text-center">
           All rights reserved by Mazharul Islam || created 2025
         </footer>
       </body>

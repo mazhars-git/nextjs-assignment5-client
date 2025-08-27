@@ -48,7 +48,9 @@ const LoginPage = () => {
                 />
               </div>
               <div className="form-control mt-3">
-                <button className="btn btn-info text-white">Login</button>
+                <button className="btn btn-accent text-white text-lg">
+                  Login
+                </button>
               </div>
             </form>
 
@@ -109,9 +111,9 @@ const LoginPage = () => {
               </div>
               <div className="text-center text-sm">
                 Don&apos;t have an account?{" "}
-                <Link href="/signup" className="text-sky-400 font-semibold">
-                  Sign up
-                </Link>
+                <Link href="/signup" className="text-sky-600 font-semibold">
+                  Register
+                </Link>{" "}
               </div>
             </div>
           </div>
